@@ -1,10 +1,14 @@
 import Test from 'ava';
 import * as Assignment from './';
 
-Test('name is exported properly', t => {
+Test.only('name is exported properly', t => {
   t.truthy(Assignment.name);
 });
 
-Test('email is exported properly', t => {
+Test.only('email is exported properly', t => {
   t.truthy(Assignment.email);
+});
+
+Test.only('phone number is exported properly', t=> {
+  t.truthy(Assignment.phone);
 });
