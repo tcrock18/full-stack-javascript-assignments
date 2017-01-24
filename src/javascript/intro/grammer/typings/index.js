@@ -1,20 +1,27 @@
-export default {
-  isTrue: true,
-  isFalse: false,
-  email: 'tjgarlick@gmail.com',
-  age: 35,
-  phone: '8012012200',
-  favoriteFoods: ['Apple', 'Banana', 'Potato'],
-  name: {
-    first: 'Tyler',
-    last: 'Garlick'
-  },
-  notDefined: undefined,
-  nullable: null,
-  greet() {
-    return 'Hello';
-  },
-  emptyString: '',
-  zero: 0,
-  one: 1
-};
+'This is a string, Yo!'.endsWith('!'); // boolean: True
+
+const price = 30;
+
+console.log(price >= 50);  // boolean: False
+
+let foo = null;
+
+console.log(foo);  // null
+
+const noName = undefined;
+
+console.log(typeof(noName)); // undefined
+
+const age = 25;
+
+console.log('My age is: ' + age); // number
+
+const email = 'tanner.crockett@gmail.com';
+
+console.log('email: ' + email); // string
+
+const favoriteSports = ['soccer', 'basketball', 'football'];
+
+console.log(favoriteSports); // array
+
+
