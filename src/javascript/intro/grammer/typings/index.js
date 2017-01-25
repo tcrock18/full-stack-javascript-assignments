@@ -24,4 +24,3 @@ const favoriteSports = ['soccer', 'basketball', 'football'];
 
 console.log(favoriteSports); // array
 
-
