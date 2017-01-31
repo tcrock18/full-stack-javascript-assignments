@@ -4,7 +4,7 @@ export const ssn = value => {
 
   const format = (value) => `${value.substring(0, 3)}-${value.substring(3, 5)}-${value.substring(5)}`;
 
-  const isValid = () => {
+  const isValid = () => sanitize(value).toString().length === 9;
     // Your code goes here....
     //  return ??
   };
@@ -14,9 +14,9 @@ export const ssn = value => {
     isValid,
 
     toString(){
-
+      const sanitized = sanitize();
+      return format(sanitized);
     }
-  };
 };
 
 
